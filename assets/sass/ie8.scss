@@ -1,85 +1,79 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
-@import 'libs/skel';
 
 /*
-	Future Imperfect by HTML5 UP
+	Arcana by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
-$palette-border: #dedede;
-
-/* Button */
-
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	button,
-	.button {
-		border: solid 1px $palette-border;
-	}
 
 /* Form */
 
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
-	input[type="tel"],
-	select,
 	textarea {
-		border: solid 1px $palette-border;
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
 	}
 
-/* Post */
+/* Image */
 
-	.post {
-		border: solid 1px $palette-border;
+	.image {
+		-ms-behavior: url('assets/js/ie/PIE.htc');
 
-		> header {
-			border-bottom: solid 1px $palette-border;
+		img {
+			position: relative;
+			-ms-behavior: url('assets/js/ie/PIE.htc');
 		}
 	}
 
-/* Mini Post */
+/* Icon */
 
-	.mini-post {
-		border: solid 1px $palette-border;
+	.icon {
+		&.major {
+			position: relative;
+			-ms-behavior: url('assets/js/ie/PIE.htc');
+		}
 	}
 
-/* Header */
+/* Button */
 
-	#header {
-		border-bottom: solid 1px $palette-border;
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	.button {
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+	}
 
-		.links {
-			border-left: solid 1px $palette-border;
-		}
+/* Box */
 
-		.main {
-			ul {
-				li {
-					border-left: solid 1px $palette-border;
-				}
+	.box {
+		&.post {
+			.inner {
+				margin-left: 35%;
 			}
 		}
 	}
 
-/* Sidebar */
+/* Dropotron */
 
-	#sidebar {
-		> * {
-			border-top: solid 1px $palette-border;
-		}
+	.dropotron {
+		-ms-behavior: url('assets/js/ie/PIE.htc');
 	}
 
-/* Menu */
+/* Banner */
 
-	#menu {
-		border-left: solid 1px $palette-border;
+	#banner {
+		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
+	}
 
-		> * {
-			border-top: solid 1px $palette-border;
+/* Wrapper */
+
+	.wrapper {
+		&.style2 {
+			background: #fdfdfd url('images/bg01.png');
 		}
 	}
